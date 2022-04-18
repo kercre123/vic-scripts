@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/anki/bin/custom/token-get &
+
+sleep 9
+
+while true; do
+sleep 600
+systemctl restart vic-cloud
+done
